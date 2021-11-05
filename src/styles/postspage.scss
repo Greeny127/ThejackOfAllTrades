@@ -1,0 +1,65 @@
+.titlePostsPageContainer {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+#titlePostsPage {
+  font-size: 4em;
+  font-weight: 900;
+}
+
+#titleKeywordPostsPage {
+  background: linear-gradient(
+    45deg,
+    #ff7c7c,
+    #ff907c,
+    #ff9f79,
+    #ffff76,
+    #9dff9d,
+    #94fd99,
+    #9494f7,
+    #c478fa,
+    #c782ff
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+
+  -webkit-animation: rainbowanim 15s ease-in infinite;
+  -moz-animation: rainbowanim 15s ease infinite;
+  animation: rainbowanim 15s infinite;
+}
+
+@-webkit-keyframes rainbowanim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes rainbowanim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes rainbowanim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

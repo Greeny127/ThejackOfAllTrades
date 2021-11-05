@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "navbar.scss";
+@import "homepage.scss";
+@import "cards.scss";
+@import "postspage.scss";
+@import "single-post.scss";
+@import "404.scss";
+
+body {
+  background-color: #282c31;
+  color: white;
+  padding-top: 70px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.titleCardLink {
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    color: rgb(218, 218, 218);
+  }
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #282c31;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  background-color: #282c31;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: rgb(255, 255, 255);
+  background: rgb(70, 88, 70);
+}
+
+::selection {
+  color: rgb(255, 255, 255);
+  background: rgb(70, 88, 70);
+}

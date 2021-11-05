@@ -1,0 +1,87 @@
+#homeNavButton {
+  &:hover {
+    color: rgb(255, 177, 177);
+  }
+}
+
+#postsNavButton {
+  &:hover {
+    color: rgb(193, 255, 177);
+  }
+}
+
+#optionsNavButton {
+  &:hover {
+    color: rgb(177, 213, 255);
+  }
+}
+
+#titleNavButton {
+  &:hover {
+    display: inline-block;
+    background: linear-gradient(
+      45deg,
+      #ff7c7c,
+      #ffbc79,
+      #ffff76,
+      #9dff9d,
+      #9494f7,
+      #c478fa,
+      #c782ff
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+
+    -webkit-animation: rainbowanim 5s ease-in infinite;
+    -moz-animation: rainbowanim 5s ease infinite;
+    animation: rainbowanim 5s infinite;
+  }
+}
+
+#dropdownNavMenu {
+  background-color: rgb(33, 37, 41);
+}
+
+.dropdown-item {
+  color: rgba(255, 255, 255, 0.55);
+
+  &:hover {
+    background-color: rgb(50, 56, 61);
+    color: rgba(255, 255, 255, 0.55);
+  }
+}
+
+@-webkit-keyframes rainbowanim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes rainbowanim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes rainbowanim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
