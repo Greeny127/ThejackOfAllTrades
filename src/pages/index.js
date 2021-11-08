@@ -6,6 +6,34 @@ import Seo from "../components/seo"
 import Post from "../components/Post"
 import MainPost from "../components/MainPost"
 
+const query = graphql`
+  {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: [DESC] }) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            author
+            date(formatString: "MMMM DD, YYYY")
+            thumbnail {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          fields {
+            slug
+          }
+          excerpt(pruneLength: 100)
+        }
+      }
+    }
+  }
+`
+
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
@@ -19,7 +47,7 @@ const IndexPage = () => (
     <h2 id="recentHomePage">Most Recent Post</h2>
 
     <StaticQuery
-      query={postsQuery}
+      query={query}
       render={data => {
         return (
           <div>
@@ -59,33 +87,5 @@ const IndexPage = () => (
     />
   </Layout>
 )
-
-const postsQuery = graphql`
-  {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: [DESC] }) {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            author
-            date(formatString: "MMMM DD, YYYY")
-            thumbnail {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-          fields {
-            slug
-          }
-          excerpt(pruneLength: 250)
-        }
-      }
-    }
-  }
-`
 
 export default IndexPage

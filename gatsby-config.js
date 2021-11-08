@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Jack Of All Trades`,
-    description: `Test description`,
-    author: `@Test`,
+    description: `A programming blog thats built and maintaned by a teenager who programs 24/7 while playing some rpg's. It's worth your time I tell you :D`,
+    author: `@Sohan`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
