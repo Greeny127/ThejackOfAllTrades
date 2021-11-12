@@ -96,6 +96,13 @@
   margin: 2% 0 0 0;
 }
 
+@media only screen and (max-width: 700px) {
+  .cardHomePage {
+    width: 100%;
+    margin: 0 5% 3%;
+  }
+}
+
 @-webkit-keyframes rainbowanim {
   0% {
     background-position: 0% 50%;
